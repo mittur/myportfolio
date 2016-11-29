@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/* Reset
+
+html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+Richard Clark (http://richclarkdesign.com)
+http://cssreset.com
+
+-------------------------------------------------------------------------------*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, navi, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+body {
+    line-height: 1
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, navi{
+    display: block
+}
+navi ul {
+    list-style: none
+}
+li {
+    list-style: none
+}
+
+h1{
+  margin-top:30px;
+}
+
+p{
+  margin:20px 0 0 20px;
+}
+
+/* wrapper */
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    background: url(../img/back.jpg) center top;
+    padding: 25px 0 75px 0;
+    margin: 0 auto;
+    height:2250px;
+}
+#wrapperInner {
+    min-width: 1000px;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* header */
+
+.fixed {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1000;
+}
+header li {
+    float: left;
+    margin-right: 35px;
+}
+header> div.main {
+    position: relative;
+    padding-top: 104px;
+}
+
+.button a:hover img{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "alpha(opacity=50)";
+}
+
+/* image */
+
+@media screen and ( max-width: 1042px) {
+    /* ウィンドウサイズが 640px 以下の場合有効 */
+    #g_navi .button {
+        margin-left:30px;
+        width:25%;
+    }
+
+    .myPhoto{
+      display: none;
+    }
+
+    .h1_midashi{
+      margin-top:200px;
+    }
+
+    .right{
+      clear:both;
+      padding-top:30px;
+    }
+
+   #prof{
+      height:450px ;
+    }
+}
+@media screen and ( min-width: 1043px) {
+    /* ウィンドウサイズが 641px 以上の場合有効 */
+    #g_navi .button {
+        width: 25%;
+        /* 各ボタンを横幅の60% にする。 */
+        float: left;
+        /* 指定要素を左に寄せる */
+        text-align:center;
+    }
+    .right{
+      float:left;
+      margin-left:50px;
+    }
+
+
+}
+#g_navi {
+    width: 100%;
+    /* グロナビの横幅を ウィンドウの100%にする。*/
+    position: absolute;
+    top: 140px;
+    left: 0;
+    z-index: 1000;
+}
+
+
+/* 段組み */
+.left{
+    float:left;
+}
+
+.left img{
+  vertical-align: middle;
+}
+
+.clearfix{
+  clear:both;
+}
+
+.myPhoto{
+  text-align:center;
+  width:100%;
+}
+
+footer{
+  position:relative;
+  margin-top:50px;
+}
+
+.social{
+  position:absolute;
+  top:30px;
+  left:450px;
+}
+
+.social2{
+  position:absolute;
+  top:30px;
+  left:500px;
+}
+
+.social3{
+  position:absolute;
+  top:30px;
+  left:550px;
+}
