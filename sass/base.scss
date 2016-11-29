@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/*============================
+ノーマライズ
+============================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+============================
+PC設定
+============================
+*/
+.pc{
+  display:block;
+}
+.sp{
+  display:none;
+}
+.main_img{
+  width:960px;
+  margin:0 auto;
+  text-align:center;
+  img{
+    width: 850px;
+  }
+}
+a:link { color: #fff; }
+a:visited { color: #fff; }
+.wrapper{
+  background:url("../images/back.jpg");
+  .wrapperInner{
+    width:960px;
+    margin:0 auto;
+    header{
+      ul{
+        width:960px;
+        margin:0 auto;
+        padding:30px 0;
+        overflow:hidden;
+        li{
+          width:192px;
+          float:left;
+          vertical-align:middle;
+        }
+        .nav{
+          text-align:center;
+          padding: 30px 0;
+        }
+      }
+    }
+}
+    .bg_color{
+      width:960px;
+      margin:0 auto;
+      /*background:#fff;*/
+    #profile{
+          margin: 30px 0;
+          figure{
+            margin-bottom: 20px;
+          }
+          table{
+            width:880px;
+            margin: 0 30px;
+            th,td{
+              border-top:1px dashed #fff;
+              border-bottom:1px dashed #fff;
+              padding:20px 0;
+            }
+            th{
+              background:#A9A9A9;
+              width:200px;
+              vertical-align:middle;
+            }
+            td{
+              padding-left:20px;
+            }
+          }
+    }
+    #career{
+      figure{
+        margin-bottom: 20px;
+        }
+        margin: 30px 0;
+        li{
+          background:url("../images/top.png")no-repeat left center;
+          padding: 20px 45px;
+          margin: 0 30px;
+        }
+    }
+    #works{
+      figure{
+        margin-bottom: 20px;
+        }
+        margin: 30px 0;
+        dl{
+          width:960px;
+          dt{
+            margin: 20px 20px;
+          }
+          dd{
+            img{
+              width:100%;
+            }
+          }
+        }
+    }
+    #contact{
+      figure{
+        margin-bottom: 20px;
+        }
+        padding: 30px 0;
+        p{
+            line-height: 2;
+            margin-left:30px;
+            strong{
+              font-weight:bold;
+            }
+        }
+    }
+  }
+}
+footer{
+  background:#800000;
+  color:#fff;
+  p{
+    padding: 40px;
+    text-align: center;
+  }
+}
+
+
+/*
+============================
+スマホ設定
+============================
+*/
+@media screen and (max-width:960px){
+  .sp{
+    display:block;
+  }
+  .pc{
+    display:none;
+  }
+  .main_img{
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    img{
+      width: 100%;
+    }
+  }
+  a:link { color: #fff; }
+  a:visited { color: #fff; }
+  .wrapper{
+    background:url("../images/back.jpg");
+    .wrapperInner{
+      width:100%;
+      margin:0 auto;
+      header{
+        ul{
+          width:100%;
+          margin:0 auto;
+          padding:15px 0;
+          overflow:hidden;
+          li{
+            width:100%;
+            .img_size{
+              height: 45px;
+            }
+          }
+          li:nth-of-type(1){
+            margin-left: 20px;
+          }
+          .nav{
+            text-align:center;
+            padding: 10px 0;
+          }
+        }
+      }
+
+  }
+      .bg_color{
+        width:100%;
+        margin:0 auto;
+        /*background:#fff;*/
+        figure{
+          img{
+            height: 50px;
+          }
+        }
+      #profile{
+            table{
+              width:100%;
+              text-align:center;
+              margin:0;
+              th,td{
+                display:block;
+                width:100%;
+                padding:10px 0;
+              }
+              td{
+                background:#fff;
+                padding-left:0;
+                text-align:center;
+              }
+              .lt{
+                text-align:left;
+                line-height:1.5;
+              }
+            }
+      }
+      #career{
+        figure{
+          margin-bottom: 10px;
+          }
+          li{
+            padding: 20px 0 20px 40px;
+            margin: 0;
+          }
+      }
+      #works{
+        margin:0;
+        figure{
+          margin-bottom: 10px;
+          }
+          dl{
+            width:100%;
+            dt{
+              margin: 10px;
+            }
+            dd{
+              span{
+                text-align:right;
+              }
+              img{
+                width:100%;
+              }
+            }
+          }
+      }
+      #contact{
+        figure{
+          margin-bottom: 10px;
+          }
+          padding: 15px 0;
+          p{
+              padding: 0 10px;
+              line-height: 2;
+              margin-left:0;
+              strong{
+                font-weight:bold;
+              }
+          }
+      }
+    }
+  }
+  footer{
+    background:#800000;
+    color:#fff;
+    p{
+      padding: 20px;
+      text-align: center;
+    }
+  }
+}
