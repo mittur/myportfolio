@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> Mayu Mitsuhashi | Portfolio Site </title>
+    <meta name="description" content="東京電機大学在学中、三橋真由のポートフォリオサイト。">
+    <meta name="keywords" content="portfolio,ポートフォリオ,学生,web,デザイン,東京電機大学,三橋真由,webデザイン">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--  ▽ og   -->
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content>
+    <meta property="og:type">
+    <meta property="og:title" content="Mayu Mitsuhashi | Portfolio Site ">
+    <meta property="og:description" content="東京電機大学在学中、三橋真由のポートフォリオサイト。">
+    <meta property="og:image" content="img/logo.png">
+    <meta itemprop="name" content>
+    <meta itemprop="image" content="img/logo.png">
+
+    <!-- ▽Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript' src='http://api.mojidepa.com/api/jsapi?k=9c8d31c02ff77587df09f1e89fc52b16&i=1' charset='utf-8'></script>
+    <script>
+        $(function() {
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 400; // ミリ秒
+                // アンカーの値取得
+                var href = $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+    <!-- ▽css -->
+    <link href='css/base.css' rel='stylesheet' media='all'>
+    <link href="css/normalize.css">
+
+    <!-- Gallery -->
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $("#lightGallery").lightGallery();
+        });
+    </script>
+
+    <!-- Google analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-55135542-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapperInner">
+          <header>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="images/logo.png" alt="Mitsuhashi Mayu">
+                  </a>
+                </li>
+                <li class="nav"><a href="#profile"><img src="images/prof.png" alt="profile" class="img_size"></a></li>
+                <li class="nav"><a href="#career"><img src="images/career.png" alt="career" class="img_size"></a></li>
+                <li class="nav"><a href="#works"><img src="images/work.png" alt="work" class="img_size"></a></li>
+                <li class="nav"><a href="#contact"><img src="images/contact.png" alt="contact" class="img_size"></a></li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+          <figure class="main_img">
+            <img src="images/myPhoto.jpg" alt="myPhoto">
+          </figure>
+          <div class="bg_color">
+          <div id="profile">
+            <figure>
+              <img src="images/h1_profile.png" alt="profile">
+            </figure>
+            <table>
+              <tr>
+                <th>名前</th>
+                <td>三橋 真由</td>
+              </tr>
+              <tr>
+                <th>大学・学部学科</th>
+                <td>東京電機大学工学部二部<br class="sp">情報通信工学科3年</td>
+              </tr>
+              <tr>
+                <th>サークル</th>
+                <td>旭祭実行委員会</td>
+              </tr>
+              <tr>
+                <th>趣味</th>
+                <td>写真撮影・Webサイト制作</td>
+              </tr>
+              <tr>
+                <th>将来の夢</th>
+                <td>フロントエンドエンジニア</td>
+              </tr>
+              <tr>
+                <th>持っているスキル</th>
+                <td>illustrator,Photoshop,HTML5/CSS3,<br class="sp"ほか3DCGなど</td>
+              </tr>
+              <tr>
+                <th>これからやりたい事</th>
+                <td>PHPとjavascriptの勉強</td>
+              </tr>
+              <tr>
+                <th>自己紹介</th>
+                <td class="lt">高校2年生からWebの勉強を始め、Web制作をすることが楽しくなり、<br class="pc">
+                  Webのお仕事をしたいと考えるようになりました。<br>
+                デザインもできますが、コーディングをするのが好きです。<br class="pc">
+                スキルを付けて、もっと良いサイトを作れるように頑張ります！
+              </td>
+              </tr>
+            </table>
+          </div>
+          <div id="career">
+            <figure>
+              <img src="images/h1_career.png" alt="career">
+            </figure>
+            <ul>
+              <li>2014.3<br class="sp"> 東京都立葛飾総合高校<br class="sp">情報メディア系列卒業</li>
+              <li>2014.4<br class="sp"> 東京電機大学工学部二部<br class="sp">情報通信工学科入学</li>
+              <li>2014.4<br class="sp"> 東京電機大学情報メディア学科<br class="sp">学生職員として就業開始</li>
+              <li>2015.11<br class="sp"> 旭祭実行委員会広報局長に任命</li>
+              <li>2016.8<br class="sp"> 東京電機大学情報メディア学科<br class="sp">学生職員退職</li>
+              <li>2016.8<br class="sp"> 株式会社シンクアシスタント<br class="sp">として就業開始</li>
+              <li>2016.8<br class="sp"> <a href="https://www.lancers.jp/profile/mayumayu0619?1476800627&ref=header_menu" target="_blank">Lancers</a>にてフリーランス活動開始</li>
+            </ul>
+          </div>
+          <div id="works">
+            <figure>
+              <img src="images/h1_work.png" alt="works">
+            </figure>
+            <dl>
+              <dt>葛希祭第7回Webサイト
+                <br class="sp">==2013.9
+              <br>役割:コーダー</dt>
+              <dd><a href="images/img03.png" target="_blank"><img src="images/img03.png" alt="葛希祭第7回Webサイト"></a></dd>
+            </dl>
+            <dl>
+              <dt>第3回旭祭ミスコン特設サイト
+                <br class="sp">==2014.10
+              <br>役割:デザイナー、コーダー</dt>
+              <dd><a href="images/img02.png" target="_blank"><img src="images/img02.png" alt="ミスコン特設サイト"></a></dd></dd>
+            </dl>
+            <dl>
+              <dt>第4回旭祭公式webサイト
+                <br class="sp">==2015.9
+              <br>役割:デザイナー、コーダー</dt>
+              <dd><a href="images/img01.png" target="_blank"><img src="images/img01.png" alt="第4回旭祭公式webサイト"></a></dd>
+            </dl>
+            <dl>
+              <dt><a href="http://www.sg.dendai.ac.jp/s1j-asahisai">第5回旭祭公式webサイト</a>
+                <br class="sp">==2016.10
+              <br>役割:デザイナー、コーダー</dt>
+              <dd><a href="images/img04.png" target="_blank"><img src="images/img04.png" alt="第5回公式webサイト"></a></dd>
+            </dl>
+            <dl>
+              <dt>ヘアサロンWebページデザイン
+                <br class="sp">==2016.7
+              <br>役割:デザイナー</dt>
+              <dd><a href="images/img05.png" target="_blank"><img src="images/img05.jpg" alt="ヘアサロンWebページデザイン"></a></dd>
+            </dl>
+            <dl>
+              <dt>その他</dt>
+              <dd>☆大手サイトコーディング経験あり<br>
+                ☆<a href="https://www.vivivit.com/profile/public/22srtK9xRw">vivivitプロフィール</a>リンク</dd>
+            </dl>
+          </div>
+          <div id="contact">
+            <figure>
+              <img src="images/h1_contact.png" alt="contact">
+            </figure>
+            <p>
+              お仕事の依頼などは以下のアドレスまでお願いします。<br>
+              WEBデザイン、WEBコーディングなどしています。<br class="pc">
+              他にも、勉強会やセミナー・イベント等のお誘いもお待ちしてます。<br>
+              <strong>>>メールアドレス:<br class="sp">minn-minn@live.jp</strong></p>
+          </div>
+        </div>
+        <!-- wrapperInner end -->
+    </div>
+    <!-- wrapper end -->
+    <footer>
+      <p>&copy;2016&ensp;Mayu Mitsuhashi All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
