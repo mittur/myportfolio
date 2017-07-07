@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <title> Mayu Mitsuhashi | Portfolio Site </title>
@@ -51,7 +52,17 @@
             $("#lightGallery").lightGallery();
         });
     </script>
-
+    <!-- slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.bxslider').bxSlider({
+                auto: true,
+            });
+        });
+    </script>
     <!-- Google analytics -->
     <script>
         (function(i, s, o, g, r, a, m) {
@@ -74,139 +85,186 @@
 <body>
     <div class="wrapper">
         <div class="wrapperInner">
-          <header>
-            <nav>
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="images/logo.png" alt="Mitsuhashi Mayu">
-                  </a>
-                </li>
-                <li class="nav"><a href="#profile"><img src="images/prof.png" alt="profile" class="img_size"></a></li>
-                <li class="nav"><a href="#career"><img src="images/career.png" alt="career" class="img_size"></a></li>
-                <li class="nav"><a href="#works"><img src="images/work.png" alt="work" class="img_size"></a></li>
-                <li class="nav"><a href="#contact"><img src="images/contact.png" alt="contact" class="img_size"></a></li>
-              </ul>
-            </nav>
-          </header>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/logo.png" alt="Mitsuhashi Mayu">
+                            </a>
+                        </li>
+                        <li class="nav">
+                            <a href="#profile"><img src="images/prof.png" alt="profile" class="img_size"></a>
+                        </li>
+                        <li class="nav">
+                            <a href="#career"><img src="images/career.png" alt="career" class="img_size"></a>
+                        </li>
+                        <li class="nav">
+                            <a href="#works"><img src="images/work.png" alt="work" class="img_size"></a>
+                        </li>
+                        <li class="nav">
+                            <a href="#contact"><img src="images/contact.png" alt="contact" class="img_size"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-          <figure class="main_img">
-            <img src="images/myPhoto.jpg" alt="myPhoto">
-          </figure>
-          <div class="bg_color">
-          <div id="profile">
-            <figure>
-              <img src="images/h1_profile.png" alt="profile">
-            </figure>
-            <table>
-              <tr>
-                <th>名前</th>
-                <td>三橋 真由</td>
-              </tr>
-              <tr>
-                <th>大学・学部学科</th>
-                <td>東京電機大学工学部二部<br class="sp">情報通信工学科3年</td>
-              </tr>
-              <tr>
-                <th>サークル</th>
-                <td>旭祭実行委員会</td>
-              </tr>
-              <tr>
-                <th>趣味</th>
-                <td>写真撮影・Webサイト制作</td>
-              </tr>
-              <tr>
-                <th>将来の夢</th>
-                <td>フロントエンドエンジニア</td>
-              </tr>
-              <tr>
-                <th>持っているスキル</th>
-                <td>illustrator,Photoshop,HTML5/CSS3,<br class="sp"ほか3DCGなど</td>
-              </tr>
-              <tr>
-                <th>これからやりたい事</th>
-                <td>PHPとjavascriptの勉強</td>
-              </tr>
-              <tr>
-                <th>自己紹介</th>
-                <td class="lt">高校2年生からWebの勉強を始め、Web制作をすることが楽しくなり、<br class="pc">
-                  Webのお仕事をしたいと考えるようになりました。<br>
-                デザインもできますが、コーディングをするのが好きです。<br class="pc">
-                スキルを付けて、もっと良いサイトを作れるように頑張ります！
-              </td>
-              </tr>
-            </table>
-          </div>
-          <div id="career">
-            <figure>
-              <img src="images/h1_career.png" alt="career">
-            </figure>
-            <ul>
-              <li>2014.3<br class="sp"> 東京都立葛飾総合高校<br class="sp">情報メディア系列卒業</li>
-              <li>2014.4<br class="sp"> 東京電機大学工学部二部<br class="sp">情報通信工学科入学</li>
-              <li>2014.4<br class="sp"> 東京電機大学情報メディア学科<br class="sp">学生職員として就業開始</li>
-              <li>2015.11<br class="sp"> 旭祭実行委員会広報局長に任命</li>
-              <li>2016.8<br class="sp"> 東京電機大学情報メディア学科<br class="sp">学生職員退職</li>
-              <li>2016.8<br class="sp"> 株式会社シンクアシスタント<br class="sp">として就業開始</li>
-              <li>2016.8<br class="sp"> <a href="https://www.lancers.jp/profile/mayumayu0619?1476800627&ref=header_menu" target="_blank">Lancers</a>にてフリーランス活動開始</li>
-            </ul>
-          </div>
-          <div id="works">
-            <figure>
-              <img src="images/h1_work.png" alt="works">
-            </figure>
-            <dl>
-              <dt>葛希祭第7回Webサイト
+        <ul class="bxslider">
+            <li><img src="images/myPhoto.jpg" width="960" height="auto"></li>
+            <li><img src="images/myPhoto_02.jpg" width="960" height="auto"></li>
+            <li><img src="images/myPhoto_03.jpg" width="960" height="auto"></li>
+        </ul>
+        <div class="bg_color">
+            <div id="profile">
+                <figure>
+                    <img src="images/h1_profile.png" alt="profile">
+                </figure>
+                <table>
+                    <tr>
+                        <th>名前</th>
+                        <td>三橋 真由</td>
+                    </tr>
+                    <tr>
+                        <th>大学・学部学科</th>
+                        <td>東京電機大学工学部二部
+                            <br class="sp">情報通信工学科4年</td>
+                    </tr>
+                    <tr>
+                        <th>サークル</th>
+                        <td>旭祭実行委員会</td>
+                    </tr>
+                    <tr>
+                        <th>趣味</th>
+                        <td>写真撮影・Webサイト制作</td>
+                    </tr>
+                    <tr>
+                        <th>将来の夢</th>
+                        <td>フロントエンドエンジニア</td>
+                    </tr>
+                    <tr>
+                        <th>持っているスキル</th>
+                        <td>illustrator,Photoshop,HTML5/CSS3,
+                            <br class="sp" ほか3DCGなど</td>
+                    </tr>
+                    <tr>
+                        <th>これからやりたい事</th>
+                        <td>PHPとjavascriptの勉強　<br class="sp">バックエンドの方も勉強したい</td>
+                    </tr>
+                    <tr>
+                        <th>自己紹介</th>
+                        <td class="lt"><p>高校2年生からWebの勉強を始め、Web制作をすることが楽しくなり、
+                            <br class="pc"> Webのお仕事をしたいと考えるようになりました。
+                            <br> デザインも好きですが、何よりコーディングをするのが好きです。
+                            <br class="pc"> スキルを付けて、もっと良いサイトを作れるように頑張ります！</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="career">
+                <figure>
+                    <img src="images/h1_career.png" alt="career">
+                </figure>
+                <ul>
+                    <li>2014.3
+                        <br class="sp"> 東京都立葛飾総合高校
+                        <br class="sp">情報メディア系列卒業</li>
+                    <li>2014.4
+                        <br class="sp"> 東京電機大学工学部二部
+                        <br class="sp">情報通信工学科入学</li>
+                    <li>2014.4
+                        <br class="sp"> 東京電機大学情報メディア学科
+                        <br class="sp">学生職員として就業開始</li>
+                    <li>2015.11
+                        <br class="sp"> 旭祭実行委員会広報局長に任命</li>
+                    <li>2016.8
+                        <br class="sp"> 東京電機大学情報メディア学科
+                        <br class="sp">学生職員退職</li>
+                    <li>2016.8
+                        <br class="sp"> 株式会社シンク
+                        <br class="sp"> アシスタントとして就業開始
+                    </li>
+                    <li>2017.5
+                        <br class="sp"> 株式会社エクシア
+                        <br class="sp">Web制作スタッフとして就業開始</li>
+                </ul>
+            </div>
+            <div id="works">
+                <figure>
+                    <img src="images/h1_work.png" alt="works">
+                </figure>
+                <dl>
+                    <dt>葛希祭第7回Webサイト
                 <br class="sp">==2013.9
               <br>役割:コーダー</dt>
-              <dd><a href="images/img03.png" target="_blank"><img src="images/img03.png" alt="葛希祭第7回Webサイト"></a></dd>
-            </dl>
-            <dl>
-              <dt>第3回旭祭ミスコン特設サイト
+                    <dd>
+                        <a href="images/img03.png" target="_blank"><img src="images/img03.png" alt="葛希祭第7回Webサイト"></a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>第3回旭祭ミスコン特設サイト
                 <br class="sp">==2014.10
               <br>役割:デザイナー、コーダー</dt>
-              <dd><a href="images/img02.png" target="_blank"><img src="images/img02.png" alt="ミスコン特設サイト"></a></dd></dd>
-            </dl>
-            <dl>
-              <dt>第4回旭祭公式webサイト
+                    <dd>
+                        <a href="images/img02.png" target="_blank"><img src="images/img02.png" alt="ミスコン特設サイト"></a>
+                    </dd>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>第4回旭祭公式webサイト
                 <br class="sp">==2015.9
               <br>役割:デザイナー、コーダー</dt>
-              <dd><a href="images/img01.png" target="_blank"><img src="images/img01.png" alt="第4回旭祭公式webサイト"></a></dd>
-            </dl>
-            <dl>
-              <dt><a href="http://www.sg.dendai.ac.jp/s1j-asahisai">第5回旭祭公式webサイト</a>
+                    <dd>
+                        <a href="images/img01.png" target="_blank"><img src="images/img01.png" alt="第4回旭祭公式webサイト"></a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="http://www.sg.dendai.ac.jp/s1j-asahisai">第5回旭祭公式webサイト</a>
                 <br class="sp">==2016.10
               <br>役割:デザイナー、コーダー</dt>
-              <dd><a href="images/img04.png" target="_blank"><img src="images/img04.png" alt="第5回公式webサイト"></a></dd>
-            </dl>
-            <dl>
-              <dt>ヘアサロンWebページデザイン
+                    <dd>
+                        <a href="images/img04.png" target="_blank"><img src="images/img04.png" alt="第5回公式webサイト"></a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>ヘアサロンWebページデザイン
                 <br class="sp">==2016.7
               <br>役割:デザイナー</dt>
-              <dd><a href="images/img05.png" target="_blank"><img src="images/img05.jpg" alt="ヘアサロンWebページデザイン"></a></dd>
-            </dl>
-            <dl>
-              <dt>その他</dt>
-              <dd>☆大手サイトコーディング経験あり<br>
-                ☆<a href="https://www.vivivit.com/profile/public/22srtK9xRw">vivivitプロフィール</a>リンク</dd>
-            </dl>
-          </div>
-          <div id="contact">
-            <figure>
-              <img src="images/h1_contact.png" alt="contact">
-            </figure>
-            <p>
-              お仕事の依頼などは以下のアドレスまでお願いします。<br>
-              WEBデザイン、WEBコーディングなどしています。<br class="pc">
-              他にも、勉強会やセミナー・イベント等のお誘いもお待ちしてます。<br>
-              <strong>>>メールアドレス:<br class="sp">minn-minn@live.jp</strong></p>
-          </div>
+                    <dd>
+                        <a href="images/img05.jpg" target="_blank"><img src="images/img05.jpg" alt="ヘアサロンWebページデザイン"></a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>カレー屋Webページコーディング
+                <br class="sp">==2017.4
+              <br>役割:コーダー</dt>
+                    <dd>
+                        <a href="images/img06.png" target="_blank"><img src="images/img06.png" alt="ヘアサロンWebページデザイン"></a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>その他</dt>
+                    <dd class="ls">☆大手サイトコーディング経験あり
+                        <br> ☆
+                        <a href="https://www.vivivit.com/profile/public/22srtK9xRw">vivivitプロフィール</a>リンク</dd>
+                </dl>
+            </div>
+            <div id="contact">
+                <figure>
+                    <img src="images/h1_contact.png" alt="contact">
+                </figure>
+                <p>
+                    お仕事の依頼などは以下のアドレスまでお願いします。
+                    <br> WEBデザイン、WEBコーディングなどしています。
+                    <br class="pc"> 他にも、勉強会やセミナー・イベント等のお誘いもお待ちしてます。
+                    <br>
+                    <strong>>>メールアドレス:<br class="sp">minn-minn@live.jp</strong></p>
+            </div>
         </div>
         <!-- wrapperInner end -->
     </div>
     <!-- wrapper end -->
     <footer>
-      <p>&copy;2016&ensp;Mayu Mitsuhashi All rights reserved.</p>
+        <p>&copy;2016&ensp;Mayu Mitsuhashi All rights reserved.</p>
     </footer>
 </body>
 
